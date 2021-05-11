@@ -1,0 +1,20 @@
+---
+- hosts: localhost
+  become: yes
+
+  vars_files: []
+
+  pre_tasks:
+    - name: Install packages
+      apt:
+        pkg:
+          - texlive
+          - texlive-extra-utils
+
+  roles: []
+
+  tasks: []
+
+  post_tasks: []
+
+  vars: []
